@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect('/index');
+    return view('welcome');
 });
 Route::get('index', [MessageController::class, 'index']);
 Route::post('send_message', [MessageController::class, 'store']);
